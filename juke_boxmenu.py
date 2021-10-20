@@ -22,3 +22,6 @@ while True:
        continue
    print("playing {}".format(title))
    print("=" * 40)
+
+
+print("edit")
