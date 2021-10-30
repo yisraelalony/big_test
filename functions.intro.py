@@ -3,20 +3,22 @@ def multiply(x, y):
     return result
 
 
-def is_palidrome(string):
+def is_palindrome(string):
+    new_string = string
     for char in string.casefold():
         if char not in "abcdefghijklmnopqrstuvwxyz":
-            neww_string = string.replace(char, "")
+            new_string = string.replace(char, "")
 
 
-    backwards = neww_string[::-1]
-    return backwards.casefold() == neww_string.casefold()
+    backwards = new_string[::-1]
+    return backwards.casefold() == new_string.casefold()
 
+is_palindrome("")
 word = input("give me a word:  ")
-if is_palidrome(word):
-    print("{} is a paladrom".format(word))
+if is_palindrome(word):
+    print("{} is a palindrome".format(word))
 else:
-    print("{} is not a paladrom".format(word))
+    print("{} is not a palindrome".format(word))
 
 answer = multiply(33, 10)
 print(answer)
@@ -27,7 +29,6 @@ print(blue)
 for ting in range(1, 10):
     leads = multiply(ting, 3)
     print(leads)
-
 
 
 
